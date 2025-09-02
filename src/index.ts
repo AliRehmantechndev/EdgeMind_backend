@@ -8,6 +8,7 @@ import annotationRoutes from './api/routes/annotations';
 import annotationClassRoutes from './api/routes/annotationClasses';
 import annotationExportRoutes from './api/routes/annotationExport';
 import trainingRoutes from './api/routes/training';
+import trainedModelsRoutes from './api/routes/trainedModels';
 
 // Fix BigInt JSON serialization
 (BigInt.prototype as any).toJSON = function() {
@@ -34,6 +35,7 @@ app.use('/api/annotations', annotationRoutes);
 app.use('/api/annotation-classes', annotationClassRoutes);
 app.use('/api/annotations/export', annotationExportRoutes);
 app.use('/api/training', trainingRoutes);
+app.use('/api/trained-models', trainedModelsRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
