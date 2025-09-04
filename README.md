@@ -194,9 +194,6 @@ src/
 - Ensure database migrations are included for schema changes
 - Test all API endpoints before submitting PRs
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Support
 
